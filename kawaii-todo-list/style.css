@@ -1,0 +1,118 @@
+body {
+    background-color: #E89dA4;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    background-image: url(./assets/1.jpeg);
+    background-color: #FFC6D0;
+    border-radius: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    width: 90%; 
+    max-width: 800px; 
+    margin-bottom: 30px;
+    text-align: center;
+    background-position: left;
+    background-blend-mode: soft-light;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.form{
+    padding-left:10%;
+    padding-right: 10%;
+    width: 80%;
+}
+h1 {
+    font-family: "Carter One", sans-serif;
+    font-size: 24px;
+    color: #730002;
+    width: 100%;
+}
+.input__cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#FFD4D4 ;
+    border-radius: 30px;
+    height: 60px;
+}
+
+.input {
+    border: none;
+    font-size:larger;
+    padding: 10px 10px;
+    padding-right: 0;
+    border-radius: 25px;
+    background-color: #FFD4D4;
+    font-family: "Reem Kufi", sans-serif;
+
+}
+.btn{
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    text-align: center;
+    font-size: large;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+}
+
+li {
+    font-family: "Reem Kufi", sans-serif;
+    background-color: #FFD4D4;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    font-size: large;
+}
+.remove {
+    color: white;
+    cursor: pointer;
+}
+.cute-bunny {
+    margin-top: 10px;
+    max-width: 100%;
+    width: 80px;
+    height: auto; 
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px; 
+    }
+    .container{
+        background-position: right;
+    }
+    input[type="text"], button {
+        font-size: medium;
+    }
+    .cute-bunny{
+        margin-top: 50px;
+        
+    }
+    body{
+        margin: 0;
+    }
+    .form{
+        width: 90%;
+    }
+}

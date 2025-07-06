@@ -6,11 +6,11 @@ The task is to make a simple Todo list using only html and css. Plus the todo li
 
 > ## Desktop or PC view
 
-<img src="./assets/desktop.png" alt="Desktop view" width="800"/>
+<img src="./assets/desktop view.png" alt="Desktop view" width="800"/>
 
 > ## Mobile view
 
-<img src="./assets/mobile.png" alt="Desktop view" width="800"/>
+<img src="./assets/mobile view.png" alt="Desktop view" width="800"/>
 
 ## My approach
 Some part of the task were easy for me for example putting the html elements was easy. The difficult or the challenging part was the styling specially the responsivness of the page.

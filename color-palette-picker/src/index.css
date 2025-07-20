@@ -56,3 +56,7 @@ button.green {
 button.gray {
   background-color: #7f8c8d;
 }
+.hexbtn {
+  padding: 5px;
+  width: 80px;
+}

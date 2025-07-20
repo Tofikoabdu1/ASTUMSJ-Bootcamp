@@ -10,7 +10,13 @@ export default function App() {
 
   const handleColorClick = (color) => setSelectedColor(color);
   const resetColor = () => setSelectedColor("");
+  const [currentHex, setCurrentHex] = useState("");
 
+  const hexChanger = (e) => {
+    const value = e.target.value;
+    setSelectedColor(value);
+    setCurrentHex(value);
+  };
   return (
     <Card>
       <h1>🎨 Color Palette Picker</h1>
@@ -28,6 +34,13 @@ export default function App() {
         <button className="gray" onClick={resetColor}>
           Reset
         </button>
+        <input
+          className="hexbtn"
+          type="text"
+          value={currentHex}
+          onChange={hexChanger}
+          placeholder="#fff"
+        />
       </div>
     </Card>
   );

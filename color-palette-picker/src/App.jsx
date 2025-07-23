@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ColorButton from "./components/ColorButton";
 import ColorPreview from "./components/ColorPreview";
-import Card from "./components/Card"; // optional
+import Card from "./components/Card";
 
 const colors = ["red", "blue", "green"];
 
@@ -10,12 +10,10 @@ export default function App() {
 
   const handleColorClick = (color) => setSelectedColor(color);
   const resetColor = () => setSelectedColor("");
-  const [currentHex, setCurrentHex] = useState("");
 
   const hexChanger = (e) => {
     const value = e.target.value;
     setSelectedColor(value);
-    setCurrentHex(value);
   };
   return (
     <Card>
@@ -37,7 +35,6 @@ export default function App() {
         <input
           className="hexbtn"
           type="text"
-          value={currentHex}
           onChange={hexChanger}
           placeholder="#fff"
         />

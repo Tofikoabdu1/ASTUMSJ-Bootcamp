@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ColorPreview({ color }) {
   const boxStyle = {
-    backgroundColor: color || "#ddd",
+    backgroundColor: color ? color : "white",
   };
 
   return (

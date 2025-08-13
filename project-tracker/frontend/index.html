@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bootcamp Project Tracker</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://i.pinimg.com/736x/90/34/20/903420513ffec9b916f5b59425c0d2f8.jpg"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🚀 Bootcamp Project Tracker</h1>
+
+      <form id="projectForm">
+        <input type="text" id="name" placeholder="Project Name" required />
+        <input
+          type="text"
+          id="description"
+          placeholder="Description"
+          required
+        />
+        <select id="status">
+          <option value="ongoing">Ongoing</option>
+          <option value="completed">Completed</option>
+        </select>
+        <button type="submit">➕ Add Project</button>
+      </form>
+
+      <h2>📋 Project List</h2>
+      <ul id="projectList"></ul>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
